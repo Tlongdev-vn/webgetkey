@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLONG SYSTEM - OFFICIAL KEY</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0713;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .card {
+            background: #0f0b1b;
+            border: 1.5px solid #00f0ff;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 380px;
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card.success-mode {
+            border-color: #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #1a142d;
+            border: 1px solid #372d55;
+            color: #ffd764;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .lang-switch:hover {
+            background: #2a2045;
+        }
+
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            margin: 10px auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-get {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
+            color: white;
+            font-size: 28px;
+        }
+
+        .icon-success {
+            background: #22e576;
+            box-shadow: 0 0 15px rgba(34, 229, 118, 0.5);
+            color: #0b0713;
+            font-size: 32px;
+        }
+
+        .sub-title {
+            color: #00f0ff;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+
+        .main-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .desc {
+            color: #a09cb0;
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-get {
+            background: linear-gradient(90deg, #00d2ff 0%, #7000ff 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(112, 0, 255, 0.4);
+        }
+
+        .btn-copy {
+            background: #5b62f4;
+            color: white;
+            box-shadow: 0 4px 15px rgba(91, 98, 244, 0.4);
+        }
+
+        .btn-action:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 18px 0;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            background: #141022;
+            border: 1px solid #2a2240;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            border-color: #00f0ff;
+            color: #00f0ff;
+        }
+
+        .music-bar {
+            background: #141022;
+            border: 1px solid #221c35;
+            border-radius: 12px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+
+        .music-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: #d1cbe5;
+        }
+
+        .play-btn {
+            background: #00f0ff;
+            color: #0b0713;
+            border: none;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .key-box {
+            background: #141024;
+            border: 1px dashed #00ff88;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #00ff88;
+            margin-bottom: 15px;
+            word-break: break-all;
+        }
+
+        .note-card {
+            background: #120e20;
+            border-radius: 12px;
+            padding: 12px 15px;
+            text-align: left;
+            font-size: 11px;
+            color: #a09cb0;
+        }
+
+        .note-title {
+            color: #f2a078;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .note-card ul {
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        .note-card li {
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 12px;
+        }
+
+        .note-card li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #a09cb0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card" id="mainCard">
+        <button class="lang-switch" id="langBtn" onclick="toggleLanguage()">🌐 EN</button>
+
+        <!-- Trạng thái 1: Chưa Get Key -->
+        <div id="stateUnkey">
+            <div class="icon-wrapper icon-get">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="sub-title">OFFICIAL KEY SYSTEM</div>
+            <div class="main-title">TLONG SYSTEM</div>
+            <div class="desc" id="txtDescUnkey">Click the button below to bypass Link4m and get today's key.</div>
+
+            <button class="btn-action btn-get" id="btnBypass" onclick="handleBypass(event)">
+                <i class="fa-solid fa-bolt"></i> <span id="txtBtnGet">BYPASS LINK4M TO GET KEY</span>
+            </button>
+
+            <div class="social-row">
+                <a href="https://discord.gg/TvwRC4tba" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://tiktok.com" target="_blank" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <div class="music-bar">
+                <div class="music-info">
+                    <i class="fa-solid fa-music" style="color: #00f0ff;"></i>
+                    <span>Vai Vai Trair Phonk</span>
+                </div>
+                <button class="play-btn" onclick="toggleMusic()"><i class="fa-solid fa-play" id="musicIcon"></i></button>
+            </div>
+
+            <div class="note-card">
+                <div class="note-title"><i class="fa-solid fa-thumbtack"></i> <span id="txtNoteTitle">NOTES FOR GETTING KEY:</span></div>
+                <ul>
+                    <li id="note1">Keys automatically expire after 24 hours.</li>
+                    <li id="note2">Each key is locked to 1 single device.</li>
+                    <li id="note3">Safe bypass time takes about 1 - 2 minutes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Trạng thái 2: Đã Get Key -->
+        <div id="stateKeyed" style="display: none;">
+            <div class="icon-wrapper icon-success">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="main-title" id="txtSuccessTitle" style="font-size: 22px;">BYPASS SUCCESSFUL!</div>
+            <div class="desc" id="txtDescKeyed">Here is your key for today:</div>
+
+            <div class="key-box" id="keyDisplay">TLONG-XXXX-XXXX</div>
+
+            <button class="btn-action btn-copy" onclick="copyKey()">
+                <i class="fa-solid fa-copy"></i> <span id="txtBtnCopy">COPY KEY TO ROBLOX</span>
+            </button>
+        </div>
+    </div>
+
+    <audio id="phonkAudio" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=phonk-112343.mp3"></audio>
+
+    <script>
+        let currentLang = "EN";
+
+        const translations = {
+            EN: {
+                langBtn: "🌐 EN",
+                descUnkey: "Click the button below to bypass Link4m and get today's key.",
+                btnGet: "BYPASS LINK4M TO GET KEY",
+                noteTitle: "NOTES FOR GETTING KEY:",
+                note1: "Keys automatically expire after 24 hours.",
+                note2: "Each key is locked to 1 single device.",
+                note3: "Safe bypass time takes about 1 - 2 minutes.",
+                successTitle: "BYPASS SUCCESSFUL!",
+                descKeyed: "Here is your key for today:",
+                btnCopy: "COPY KEY TO ROBLOX",
+                copied: "✔ COPIED TO CLIPBOARD!"
+            },
+            VI: {
+                langBtn: "🌐 VI",
+                descUnkey: "Bấm vào nút bên dưới để vượt Link4m lấy Key hôm nay.",
+                btnGet: "VƯỢT LINK4M LẤY KEY",
+                noteTitle: "LƯU Ý KHI GET KEY:",
+                note1: "Key tự động hết hạn sau 24 giờ.",
+                note2: "Key chỉ gắn cố định trên 1 thiết bị.",
+                note3: "Thời gian vượt link an toàn từ 1 - 2 phút.",
+                successTitle: "VƯỢT LINK THÀNH CÔNG!",
+                descKeyed: "Dưới đây là Mã Key của bạn hôm nay:",
+                btnCopy: "COPY KEY VÀO ROBLOX",
+                copied: "✔ ĐÃ SAO CHÉP VÀO KHAY NHỚ!"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === "EN" ? "VI" : "EN";
+            updateLanguageUI();
+        }
+
+        function updateLanguageUI() {
+            const t = translations[currentLang];
+            document.getElementById("langBtn").innerText = t.langBtn;
+            document.getElementById("txtDescUnkey").innerText = t.descUnkey;
+            document.getElementById("txtBtnGet").innerText = t.btnGet;
+            document.getElementById("txtNoteTitle").innerText = t.noteTitle;
+            document.getElementById("note1").innerText = t.note1;
+            document.getElementById("note2").innerText = t.note2;
+            document.getElementById("note3").innerText = t.note3;
+            document.getElementById("txtSuccessTitle").innerText = t.successTitle;
+            document.getElementById("txtDescKeyed").innerText = t.descKeyed;
+            document.getElementById("txtBtnCopy").innerText = t.btnCopy;
+        }
+
+        function getOrCreate24hKey() {
+            const savedKey = localStorage.getItem("TLONG_KEY");
+            const savedExpiry = localStorage.getItem("TLONG_KEY_EXPIRY");
+            const now = new Date().getTime();
+
+            if (savedKey && savedExpiry && now < parseInt(savedExpiry)) {
+                return savedKey;
+            } else {
+                const randomHex = () => Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1).toUpperCase();
+                const newKey = `TLONG-${randomHex()}-${randomHex()}`;
+                const expiryTime = now + (24 * 60 * 60 * 1000);
+
+                localStorage.setItem("TLONG_KEY", newKey);
+                localStorage.setItem("TLONG_KEY_EXPIRY", expiryTime.toString());
+                return newKey;
+            }
+        }
+
+        async function handleBypass(e) {
+            e.preventDefault();
+            const btn = document.getElementById("btnBypass");
+            const txtBtn = document.getElementById("txtBtnGet");
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const hwid = urlParams.get("hwid") || "DEFAULT_DEVICE";
+
+            txtBtn.innerText = currentLang === "EN" ? "GENERATING LINK..." : "ĐANG TẠO LINK...";
+            btn.style.opacity = "0.6";
+            btn.style.pointerEvents = "none";
+
+            try {
+                const res = await fetch(`/api/get-link?hwid=${encodeURIComponent(hwid)}`);
+                const data = await res.json();
+
+                if (data.status === "success" && data.shortenedUrl) {
+                    window.location.href = data.shortenedUrl;
+                } else {
+                    alert("Error: " + (data.message || "Cannot generate link"));
+                    resetBtn();
+                }
+            } catch (err) {
+                alert("Connection error!");
+                resetBtn();
+            }
+
+            function resetBtn() {
+                txtBtn.innerText = translations[currentLang].btnGet;
+                btn.style.opacity = "1";
+                btn.style.pointerEvents = "auto";
+            }
+        }
+
+        function copyKey() {
+            const keyText = document.getElementById("keyDisplay").innerText;
+            navigator.clipboard.writeText(keyText).then(() => {
+                const btnCopy = document.getElementById("txtBtnCopy");
+                const originalText = translations[currentLang].btnCopy;
+                btnCopy.innerText = translations[currentLang].copied;
+                setTimeout(() => {
+                    btnCopy.innerText = originalText;
+                }, 2000);
+            });
+        }
+
+        let isPlaying = false;
+        function toggleMusic() {
+            const audio = document.getElementById("phonkAudio");
+            const icon = document.getElementById("musicIcon");
+            if (isPlaying) {
+                audio.pause();
+                icon.className = "fa-solid fa-play";
+            } else {
+                audio.play();
+                icon.className = "fa-solid fa-pause";
+            }
+            isPlaying = !isPlaying;
+        }
+
+        window.onload = function() {
+            updateLanguageUI();
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            if (urlParams.has("getkey") || urlParams.has("key")) {
+                const activeKey = getOrCreate24hKey();
+                document.getElementById("stateUnkey").style.display = "none";
+                document.getElementById("stateKeyed").style.display = "block";
+                document.getElementById("mainCard").classList.add("success-mode");
+                document.getElementById("keyDisplay").innerText = activeKey;
+            }
+        };
+    </script>
+</body>
+</html>
